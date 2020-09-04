@@ -1,0 +1,35 @@
+<h2>Detalhes do Cadastro</h2> 
+
+<hr/>
+<div *ngIf="cadastro">
+
+  <div>
+    <label><b>UserName: </b></label> {{cadastro.username}}
+  </div>
+  <div>
+    <label><b>Email: </b></label> {{cadastro.email}}
+  </div>  
+  <div>
+    <label><b>Nome: </b></label> {{cadastro.nome}}
+  </div>
+  <div>
+    <label><b>Sexo: </b></label> {{cadastro.sexo}}
+  </div>  
+  <div>
+    <label><b>Data de Nascimento: </b></label> {{cadastro.dataNascimento}}
+  </div>
+  <div>
+    <label><b>Naturalidade: </b></label> {{cadastro.naturalidade}}
+  </div>
+  <div>
+    <label><b>Nacionalidade: </b></label> {{cadastro.nacionalidade}}
+  </div>
+  <div>
+    <label><b>CPF: </b></label> {{cadastro.cpf}}
+  </div>
+
+</div>
+
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary">Voltar</button><br>

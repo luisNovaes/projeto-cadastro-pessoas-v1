@@ -1,0 +1,36 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+      <h2>Lista de cadastros</h2>
+    </div>
+    <div class="panel-body" >
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>nome</th>
+            <th>sexo</th>
+            <th>E-mail</th> 
+            <th>Data de Nascimento</th>
+            <th>Naturalidade</th>
+            <th>Nacionalidade</th>
+            <th>CPF</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let cadastro of cadastros | async">
+            <td>{{cadastro.nome}}</td>
+            <td>{{cadastro.sexo}}</td>
+            <td>{{cadastro.email}}</td> 
+            <td>{{cadastro.dataNascimento}}</td>
+            <td>{{cadastro.naturalidade}}</td>
+            <td>{{cadastro.nacionalidade}}</td>
+            <td>{{cadastro.cpf}}</td>
+            <th><button (click)="deleteCadastro(cadastro.id)" class="btn btn-danger" >Delete</button>
+              <button (click)="updateCadastro(cadastro.id)" class="btn btn-info" style="font-size: 14.5px">Update</button>
+                <button (click)="cadastroDetails(cadastro.id)" class="btn btn-info" >Details</button>
+            </th>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>

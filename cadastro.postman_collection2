@@ -1,0 +1,213 @@
+{
+	"variables": [],
+	"info": {
+		"name": "cadastro",
+		"_postman_id": "fe2259ab-1d34-c377-8c24-f100b7d5134e",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/auth/signup",
+			"request": {
+				"url": "http://localhost:8080/api/auth/signup",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtYXJpYSIsImlhdCI6MTU5OTA3Mzk3NywiZXhwIjoxNTk5MTYwMzc3fQ.1uRkCstbL9Bgq-lztsMRV_cAhRkwhSsD2XJhZYbVEL02SSkxpcIuF1elDNA6Ts75LzjLBu9_ey5TCR-HnLxv6A",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\":\"testepostmans\",\n\t\"email\": \"testepostmans@gmail.com\",\n\t\"password\" : \"12345678\"\n}"
+				},
+				"description": "Inserir usuario"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/test/user",
+			"request": {
+				"url": "http://localhost:8080/api/test/user",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0ZXBvc3RtYW5zIiwiaWF0IjoxNTk5MTQxODkwLCJleHAiOjE1OTkyMjgyOTB9.AEKhsM8U9t9814U_qD0Kc5TL7v_TAbg4sD6LlJuHpnO4z_kglwpTmBKMgxMvAWNfA0yvc7WLaMSAm7SDnEl-Tg",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "Teste de autenticação area restrita"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/test/all",
+			"request": {
+				"url": "http://localhost:8080/api/test/all",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "Teste autencicação area publica"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/test/admin",
+			"request": {
+				"url": "http://localhost:8080/api/test/admin",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTU5OTE0MjE2MiwiZXhwIjoxNTk5MjI4NTYyfQ.asA_Qs_wxVz5FUP4p7dJ9pOciA5crwK9nhT9J4SFVR0mXUEx0WcOvS-Dd2gFPxS3wXlDGSCEpho11QohC0lmwA",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "Teste de login como admin"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/auth/",
+			"request": {
+				"url": "http://localhost:8080/api/cadastro/5f50dffe43079e7767eb9466",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer  eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTU5OTE0MjE2MiwiZXhwIjoxNTk5MjI4NTYyfQ.asA_Qs_wxVz5FUP4p7dJ9pOciA5crwK9nhT9J4SFVR0mXUEx0WcOvS-Dd2gFPxS3wXlDGSCEpho11QohC0lmwA",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"nome\": \"Luana da Silva\", \n\t\"email\": \"andre@gmail.com\",\n\t\"sexo\": \"M\" ,\n\t\"dataNascimento\":\"2000-10-20\", \n\t\"naturalidade\": \"Londre\", \n\t\"nacionalidade\": \"Reino Unido\", \n\t\"cpf\": \"15281695657\"\n}"
+				},
+				"description": "Update"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/auth/signin",
+			"request": {
+				"url": "http://localhost:8080/api/auth/signin",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\" : \"admin\",\n\t\"password\": \"admin123\"\n}"
+				},
+				"description": "login"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/auth/contatos",
+			"request": {
+				"url": "http://localhost:8080/api/cadastro/contatos",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer  eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTU5OTE0MjE2MiwiZXhwIjoxNTk5MjI4NTYyfQ.asA_Qs_wxVz5FUP4p7dJ9pOciA5crwK9nhT9J4SFVR0mXUEx0WcOvS-Dd2gFPxS3wXlDGSCEpho11QohC0lmwA",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "Lisata todos"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/auth/Ivan",
+			"request": {
+				"url": "http://localhost:8080/api/cadastro/5f50dffe43079e7767eb9466",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer  eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTU5OTE0MzI4NSwiZXhwIjoxNTk5MjI5Njg1fQ.VxidMR3a2HgwHvidk6xbCOYaVvZzxieUAzqCONquqGcTIG4xmg2OU6lH-KWkjKznH666Wz4meaEzmaHtU0tdyw",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "Deletar"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/auth/contatos",
+			"request": {
+				"url": "http://localhost:8080/api/cadastro/5f50fbba99b8733ecd62a98a",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTU5OTE0MzQwOSwiZXhwIjoxNTk5MjI5ODA5fQ.UBhNp79WVxDFVJgfz3dB8K2SMcYoPHTIxIR6z2jFSE4lJuPI-t-CkNqJfxqFo1bLyaNzvkyh93zEOVeFclcAmA",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "Lista usuario pelo id"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/cadastro/cadastrar",
+			"request": {
+				"url": "http://localhost:8080/api/cadastro/cadastrar",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTU5OTE0MjE2MiwiZXhwIjoxNTk5MjI4NTYyfQ.asA_Qs_wxVz5FUP4p7dJ9pOciA5crwK9nhT9J4SFVR0mXUEx0WcOvS-Dd2gFPxS3wXlDGSCEpho11QohC0lmwA",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"nome\": \"Avainas ponto Com\", \n\t\"email\": \"ponto@gmail.com\",\n\t\"sexo\": \"F\" ,\n\t\"dataNascimento\":\"2020-09-20\", \n\t\"naturalidade\": \"Roma\", \n\t\"nacionalidade\": \"Italia\", \n\t\"cpf\": \"58635297504\"\n}"
+				},
+				"description": "Salvar"
+			},
+			"response": []
+		}
+	]
+}

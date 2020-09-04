@@ -1,0 +1,340 @@
+{
+	"id": "fe2259ab-1d34-c377-8c24-f100b7d5134e",
+	"name": "cadastro",
+	"description": "",
+	"order": [
+		"701ca1bd-728b-37b7-4e82-bf50676d5cc5",
+		"f8e9c9ee-91a0-b655-dc13-ebb710086221",
+		"3b696d6d-6a25-e9d0-4c3a-124cd058da5a",
+		"7cf334c6-9da2-0db8-4e2e-e4f9f5771e50",
+		"ee66bb04-fc11-a43d-a13c-daf81f11bd15",
+		"63a7cb3d-3d78-bca8-f9b3-0e7ab57a7fb1",
+		"de26faf2-7a3d-cac1-851c-43465a4c82c3",
+		"02c41a10-5d92-fe0e-208f-c8ab4443a073",
+		"976c2b59-5cd3-f9af-d90e-70a41c2549ff",
+		"3a0756fe-ff38-336c-4970-608bebd36bc2"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1598909831031,
+	"owner": "4392415",
+	"public": false,
+	"requests": [
+		{
+			"id": "02c41a10-5d92-fe0e-208f-c8ab4443a073",
+			"headers": "Authorization: Bearer  eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTU5OTE0MzI4NSwiZXhwIjoxNTk5MjI5Njg1fQ.VxidMR3a2HgwHvidk6xbCOYaVvZzxieUAzqCONquqGcTIG4xmg2OU6lH-KWkjKznH666Wz4meaEzmaHtU0tdyw\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer  eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTU5OTE0MzI4NSwiZXhwIjoxNTk5MjI5Njg1fQ.VxidMR3a2HgwHvidk6xbCOYaVvZzxieUAzqCONquqGcTIG4xmg2OU6lH-KWkjKznH666Wz4meaEzmaHtU0tdyw",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/api/cadastro/5f50dffe43079e7767eb9466",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1599143331150,
+			"name": "http://localhost:8080/api/auth/Ivan",
+			"description": "Deletar",
+			"collectionId": "fe2259ab-1d34-c377-8c24-f100b7d5134e",
+			"responses": []
+		},
+		{
+			"id": "3a0756fe-ff38-336c-4970-608bebd36bc2",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTU5OTE0MjE2MiwiZXhwIjoxNTk5MjI4NTYyfQ.asA_Qs_wxVz5FUP4p7dJ9pOciA5crwK9nhT9J4SFVR0mXUEx0WcOvS-Dd2gFPxS3wXlDGSCEpho11QohC0lmwA\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTU5OTE0MjE2MiwiZXhwIjoxNTk5MjI4NTYyfQ.asA_Qs_wxVz5FUP4p7dJ9pOciA5crwK9nhT9J4SFVR0mXUEx0WcOvS-Dd2gFPxS3wXlDGSCEpho11QohC0lmwA",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/api/cadastro/cadastrar",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "fe2259ab-1d34-c377-8c24-f100b7d5134e",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost:8080/api/cadastro/cadastrar",
+			"description": "Salvar",
+			"descriptionFormat": "html",
+			"time": 1599142866300,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"nome\": \"Avainas ponto Com\", \n\t\"email\": \"ponto@gmail.com\",\n\t\"sexo\": \"F\" ,\n\t\"dataNascimento\":\"2020-09-20\", \n\t\"naturalidade\": \"Roma\", \n\t\"nacionalidade\": \"Italia\", \n\t\"cpf\": \"58635297504\"\n}"
+		},
+		{
+			"id": "3b696d6d-6a25-e9d0-4c3a-124cd058da5a",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/api/test/all",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1599004632291,
+			"name": "http://localhost:8080/api/test/all",
+			"description": "Teste autencicação area publica",
+			"collectionId": "fe2259ab-1d34-c377-8c24-f100b7d5134e",
+			"responses": []
+		},
+		{
+			"id": "63a7cb3d-3d78-bca8-f9b3-0e7ab57a7fb1",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/api/auth/signin",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1599143547596,
+			"name": "http://localhost:8080/api/auth/signin",
+			"description": "login",
+			"collectionId": "fe2259ab-1d34-c377-8c24-f100b7d5134e",
+			"responses": [],
+			"rawModeData": "{\n\t\"username\" : \"admin\",\n\t\"password\": \"admin123\"\n}"
+		},
+		{
+			"id": "701ca1bd-728b-37b7-4e82-bf50676d5cc5",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtYXJpYSIsImlhdCI6MTU5OTA3Mzk3NywiZXhwIjoxNTk5MTYwMzc3fQ.1uRkCstbL9Bgq-lztsMRV_cAhRkwhSsD2XJhZYbVEL02SSkxpcIuF1elDNA6Ts75LzjLBu9_ey5TCR-HnLxv6A\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtYXJpYSIsImlhdCI6MTU5OTA3Mzk3NywiZXhwIjoxNTk5MTYwMzc3fQ.1uRkCstbL9Bgq-lztsMRV_cAhRkwhSsD2XJhZYbVEL02SSkxpcIuF1elDNA6Ts75LzjLBu9_ey5TCR-HnLxv6A",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/api/auth/signup",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1599139560288,
+			"name": "http://localhost:8080/api/auth/signup",
+			"description": "Inserir usuario",
+			"collectionId": "fe2259ab-1d34-c377-8c24-f100b7d5134e",
+			"responses": [],
+			"rawModeData": "{\n\t\"username\":\"testepostmans\",\n\t\"email\": \"testepostmans@gmail.com\",\n\t\"password\" : \"12345678\"\n}"
+		},
+		{
+			"id": "7cf334c6-9da2-0db8-4e2e-e4f9f5771e50",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTU5OTE0MjE2MiwiZXhwIjoxNTk5MjI4NTYyfQ.asA_Qs_wxVz5FUP4p7dJ9pOciA5crwK9nhT9J4SFVR0mXUEx0WcOvS-Dd2gFPxS3wXlDGSCEpho11QohC0lmwA\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTU5OTE0MjE2MiwiZXhwIjoxNTk5MjI4NTYyfQ.asA_Qs_wxVz5FUP4p7dJ9pOciA5crwK9nhT9J4SFVR0mXUEx0WcOvS-Dd2gFPxS3wXlDGSCEpho11QohC0lmwA",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/api/test/admin",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1599142262085,
+			"name": "http://localhost:8080/api/test/admin",
+			"description": "Teste de login como admin",
+			"collectionId": "fe2259ab-1d34-c377-8c24-f100b7d5134e",
+			"responses": []
+		},
+		{
+			"id": "976c2b59-5cd3-f9af-d90e-70a41c2549ff",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTU5OTE0MzQwOSwiZXhwIjoxNTk5MjI5ODA5fQ.UBhNp79WVxDFVJgfz3dB8K2SMcYoPHTIxIR6z2jFSE4lJuPI-t-CkNqJfxqFo1bLyaNzvkyh93zEOVeFclcAmA\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTU5OTE0MzQwOSwiZXhwIjoxNTk5MjI5ODA5fQ.UBhNp79WVxDFVJgfz3dB8K2SMcYoPHTIxIR6z2jFSE4lJuPI-t-CkNqJfxqFo1bLyaNzvkyh93zEOVeFclcAmA",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/api/cadastro/5f50fbba99b8733ecd62a98a",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1599143486061,
+			"name": "http://localhost:8080/api/auth/contatos",
+			"description": "Lista usuario pelo id",
+			"collectionId": "fe2259ab-1d34-c377-8c24-f100b7d5134e",
+			"responses": []
+		},
+		{
+			"id": "de26faf2-7a3d-cac1-851c-43465a4c82c3",
+			"headers": "Authorization: Bearer  eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTU5OTE0MjE2MiwiZXhwIjoxNTk5MjI4NTYyfQ.asA_Qs_wxVz5FUP4p7dJ9pOciA5crwK9nhT9J4SFVR0mXUEx0WcOvS-Dd2gFPxS3wXlDGSCEpho11QohC0lmwA\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer  eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTU5OTE0MjE2MiwiZXhwIjoxNTk5MjI4NTYyfQ.asA_Qs_wxVz5FUP4p7dJ9pOciA5crwK9nhT9J4SFVR0mXUEx0WcOvS-Dd2gFPxS3wXlDGSCEpho11QohC0lmwA",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/api/cadastro/contatos",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1599142181229,
+			"name": "http://localhost:8080/api/auth/contatos",
+			"description": "Lisata todos",
+			"collectionId": "fe2259ab-1d34-c377-8c24-f100b7d5134e",
+			"responses": []
+		},
+		{
+			"id": "ee66bb04-fc11-a43d-a13c-daf81f11bd15",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer  eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTU5OTE0MjE2MiwiZXhwIjoxNTk5MjI4NTYyfQ.asA_Qs_wxVz5FUP4p7dJ9pOciA5crwK9nhT9J4SFVR0mXUEx0WcOvS-Dd2gFPxS3wXlDGSCEpho11QohC0lmwA\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer  eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTU5OTE0MjE2MiwiZXhwIjoxNTk5MjI4NTYyfQ.asA_Qs_wxVz5FUP4p7dJ9pOciA5crwK9nhT9J4SFVR0mXUEx0WcOvS-Dd2gFPxS3wXlDGSCEpho11QohC0lmwA",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/api/cadastro/5f50dffe43079e7767eb9466",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1599142612023,
+			"name": "http://localhost:8080/api/auth/",
+			"description": "Update",
+			"collectionId": "fe2259ab-1d34-c377-8c24-f100b7d5134e",
+			"responses": [],
+			"rawModeData": "{\n\t\"nome\": \"Luana da Silva\", \n\t\"email\": \"andre@gmail.com\",\n\t\"sexo\": \"M\" ,\n\t\"dataNascimento\":\"2000-10-20\", \n\t\"naturalidade\": \"Londre\", \n\t\"nacionalidade\": \"Reino Unido\", \n\t\"cpf\": \"15281695657\"\n}"
+		},
+		{
+			"id": "f8e9c9ee-91a0-b655-dc13-ebb710086221",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0ZXBvc3RtYW5zIiwiaWF0IjoxNTk5MTQxODkwLCJleHAiOjE1OTkyMjgyOTB9.AEKhsM8U9t9814U_qD0Kc5TL7v_TAbg4sD6LlJuHpnO4z_kglwpTmBKMgxMvAWNfA0yvc7WLaMSAm7SDnEl-Tg\nAuthorization: \n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0ZXBvc3RtYW5zIiwiaWF0IjoxNTk5MTQxODkwLCJleHAiOjE1OTkyMjgyOTB9.AEKhsM8U9t9814U_qD0Kc5TL7v_TAbg4sD6LlJuHpnO4z_kglwpTmBKMgxMvAWNfA0yvc7WLaMSAm7SDnEl-Tg",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/api/test/user",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1599142119728,
+			"name": "http://localhost:8080/api/test/user",
+			"description": "Teste de autenticação area restrita",
+			"collectionId": "fe2259ab-1d34-c377-8c24-f100b7d5134e",
+			"responses": []
+		}
+	]
+}
